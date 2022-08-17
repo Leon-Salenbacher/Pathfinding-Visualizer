@@ -1,0 +1,72 @@
+.nav{
+    background-color: #8f8d88;
+}
+
+.buttons{
+    text-align: center;
+    margin: auto;
+    width: auto;
+    padding: 10px;
+}
+
+.button {
+    background-color: transparent; 
+    border: none;
+    color: white;
+    padding: 14px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.button:hover {
+    color: #762fc2;
+    background-color: #d3c3a7;
+    border: none;
+    border-radius: 5px;
+}
+
+.visualizer{
+    background-color: transparent; 
+    color: white;
+    border: none;
+    padding: 14px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px; 
+    box-shadow: inset 0px 0px 0px 2px white;
+    box-sizing: border-box;
+}
+
+.visualizer:hover{
+    color: #762fc2;
+    background-color: #d3c3a7;
+    border: none;
+    border-radius: 5px;
+    box-shadow: inset 0px 0px 0px 2px #762fc2;
+}
+
+.visualizer-red{
+    background-color: transparent; 
+    color: white;
+    border: none;
+    padding: 14px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px; 
+    box-shadow: inset 0px 0px 0px 2px red;
+    box-sizing: border-box;
+}
+
+.visualizer-red:hover{
+    background-color: red;
+}

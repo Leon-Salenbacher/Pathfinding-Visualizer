@@ -1,0 +1,76 @@
+/* ==============Dropdown Menu Algorithm================= */
+
+/* Dropdown Button */
+.dropbtn {
+    background-color: transparent;
+    color: white;
+    padding: 14px;
+    /* padding-right: 0px; */
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+  }
+
+/* Dropdown button on hover & focus */
+.dropbtn:hover, .dropbtn:focus {
+    color: #762fc2;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default */
+.dropdown-content{
+    display: none;
+    border-radius: 5px;
+    position: absolute;
+    background-color: #8f8d88;
+    color: white;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+    background-color: #762fc2; 
+    border-radius: 10px; 
+    /*color: #762fc2;*/
+}
+
+/* Dropdown button on hover & focus */
+.dropbtn:hover, .dropbtn:focus {
+    color: #762fc2;
+    background-color: #d3c3a7;
+    border-radius: 5px;
+}
+
+/* Show the dropdown menu (use JS to add this class to the 
+.dropdown-content container when the user clicks on the dropdown button) */
+.show {display:block;}
+
+/* ======================== dreieck ===================== */
+.css-dreieck {
+    width: 0px;
+    height: 0px;
+
+    background-color:red;
+
+    margin: 0px;
+
+
+    border-top: 10px solid #762fc2; 
+    border-right: 10px solid transparent; 
+    border-bottom: 10px solid transparent; 
+    border-left: 10px solid transparent; 
+}

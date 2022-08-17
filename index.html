@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Path Finding</title>
+
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/nav.css">
+    <link rel="stylesheet" href="style/dropdown.css">
+    
+    <script src="./main.js"></script>
+    <script src="board/board.js"></script>
+    <script src="board/build_board.js"></script>
+    <script src="modules.js"></script>
+
+    <script src="Algorithm/dfs.js"></script>
+    <script src="Algorithm/bfs.js"></script>
+    
+    <script src="Maze/maze_modules.js"></script> 
+    <script src="Maze/randomized_dfs.js"></script> 
+    <!-- comming soon -->
+</head>
+<body onmousedown="set_mouseDown()" onmouseup="set_mouseUp()">
+    <div class="nav">
+        <div class="buttons">
+            <div class="dropdown">
+                <button onclick="Dropdown('Algorithms')" class="dropbtn">Algorithms</button>
+                <div id="Algorithms" class="dropdown-content">
+                    <a onclick="set_al(1)">DFS</a>
+                    <a onclick="set_al(2)">BFS</a>
+                </div>              
+            </div>
+            <div class="dropdown">
+                <button onclick="Dropdown('Maze')" class="dropbtn">Maze</button>
+                <div id="Maze" class="dropdown-content">
+                    <a onclick="build_maze(1)">Randomized DFS</a>
+                    <!-- <a onclick="build_maze(2)">comming</a>
+                    <a onclick="build_maze(3)">comming</a> -->
+                </div>              
+            </div> 
+            <button id="visualize_btn" type="button" class="visualizer" onclick="visualize()">Visualize</button>
+            <button type="button" class="button" onclick="Clear_all()">Clear Board</button>
+            <button type="button" class="button" onclick="Clear_path()">Clear Path</button>
+
+            <div class="dropdown">
+                <button id="speed_btn" onclick="Dropdown('Speed')" class="dropbtn">Speed: Medium</button>
+                <div id="Speed" class="dropdown-content">
+                    <a onclick="set_speed(1)">Slow</a>
+                    <a onclick="set_speed(2)">Medium</a>
+                    <a onclick="set_speed(3)">Fast</a>
+                    <a onclick="set_speed(4)">Instand</a>
+                </div>              
+            </div>
+        </div>     
+    </div>
+    <div id="board" class="board">
+    </div>
+</body>
+</html>
